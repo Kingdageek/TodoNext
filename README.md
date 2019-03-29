@@ -1,6 +1,6 @@
 ## Simple Todo List App with Next.js and React
 ---
-This was done to satisfy the Enye Software Development program's [requirements](https://docs.google.com/document/d/1ZUyi4bbUDBui6fbVmVeqD8PqUS6gTbekftKLooPwZlk/edit), after spending like 9 hours on [codecademy](https://codecademy.org). So, the major focus wasn't to follow industry-best practises, it was just to get something done.
+This was done to satisfy the **Enye** Software Development program's [requirements](https://docs.google.com/document/d/1ZUyi4bbUDBui6fbVmVeqD8PqUS6gTbekftKLooPwZlk/edit), after spending like 9 hours on [codecademy](https://codecademy.org). So, the major focus wasn't to follow industry-best practises, it was just to get something done.
 
 There's like literally no **styling**, maybe styling would be added later.
 
