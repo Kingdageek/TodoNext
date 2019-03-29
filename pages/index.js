@@ -31,7 +31,9 @@ class Index extends React.Component
     removeTodo = (position) => {
         const todos = [...this.state.todos]
         todos.splice(position, 1)
-        console.log(todos)
+        this.setState({
+            todos: todos
+        })
     }
 
     render () {
@@ -41,9 +43,11 @@ class Index extends React.Component
                     changeTodo={this.changeTodo}
                     addTodo={this.addTodo}
                     currentTodo={this.state.currentTodo}
+                />
+                <TodoTasks 
+                    todos={this.state.todos} 
                     removeTodo={this.removeTodo}
                 />
-                <TodoTasks todos={this.state.todos} />
             </div>
         )
     }
