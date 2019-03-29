@@ -7,7 +7,7 @@ class TodoTasks extends React.Component
             (todo, position) => (
                 <li key={ todo+'_'+position }>
                     { todo }
-                    <button onClick={this.props.removeTodo(position)}>Remove</button>
+                    <button onClick={ () => this.props.removeTodo(position)}>Remove</button>
                 </li>
             )
         )
