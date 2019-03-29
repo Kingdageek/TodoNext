@@ -6,4 +6,4 @@ There's like literally no **styling**, maybe styling would be added later.
 
 So, clone the repo and run `npm install` to get the required packages downloaded to your computer then run `npm run dev` to start up the development server.
 
-*TodoForm.js* contains the `TodoForm` Component that just displays the form to enter a Todo, *TodoTasks.js* contains the `TodoTasks` component that displays all the available Todos, *index.js* contains the `Index` component that brings them together and works the magic.
+*pages/TodoForm.js* contains the `TodoForm` Component that just displays the form to enter a Todo, *pages/TodoTasks.js* contains the `TodoTasks` component that displays all the available Todos, *pages/index.js* contains the `Index` component that brings them together and works the magic.
