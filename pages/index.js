@@ -1,4 +1,5 @@
 import TodoForm from './TodoForm';
+import TodoTasks from './TodoTasks';
 
 class Index extends React.Component
 {
@@ -35,6 +36,7 @@ class Index extends React.Component
                     addTodo={this.addTodo}
                     currentTodo={this.state.currentTodo}
                 />
+                <TodoTasks todos={this.state.todos} />
             </div>
         )
     }
