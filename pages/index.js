@@ -1,5 +1,5 @@
-import TodoForm from './TodoForm';
-import TodoTasks from './TodoTasks';
+import TodoForm from '../components/TodoForm';
+import TodoTasks from '../components/TodoTasks';
 
 class Index extends React.Component
 {
