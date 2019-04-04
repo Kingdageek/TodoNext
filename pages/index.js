@@ -1,5 +1,6 @@
 import TodoForm from '../components/TodoForm';
 import TodoTasks from '../components/TodoTasks';
+import fetch from 'isomorphic-unfetch';
 
 class Index extends React.Component
 {
@@ -9,6 +10,13 @@ class Index extends React.Component
             currentTodo: '',
             todos: []
         }
+    }
+
+    // React lifecycle method that'd be called after component is mounted
+    componentDidMount () {
+        this.setState({
+            todos: [...this.props.todos]
+        })
     }
 
     changeTodo = (event) => {
@@ -51,6 +59,18 @@ class Index extends React.Component
             </div>
         )
     }
+}
+
+Index.getInitialProps = async function () {
+    try {
+        const response = await fetch('http://localhost:3000/api/todos')
+        const data = await response.json()
+        const todos = await data.todos
+
+        return {
+            todos: todos
+        }
+    } catch { (err) => console.log( 'An error occurred '+ err ) }
 }
 
 export default Index
